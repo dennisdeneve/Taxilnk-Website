@@ -16,10 +16,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="css/tooplate-style.css" />
-    <!--
-Tooplate 2111 Pro Line
-http://www.tooplate.com/view/2111-pro-line
--->
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <style>
+    .signin {
+      text-align :right;
+    }
+    </style>
   </head>
 
 
@@ -58,6 +63,9 @@ http://www.tooplate.com/view/2111-pro-line
                     <a class="nav-link" href="#home"
                       >Home <span class="sr-only">(current)</span></a
                     >
+                    <li class="nav-item">
+                      <a class="nav-link" href="#company">About us</a>
+                    </li>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#features">The Problem</a>
@@ -65,9 +73,7 @@ http://www.tooplate.com/view/2111-pro-line
                   <li class="nav-item">
                     <a class="nav-link" href="#activities">The Solution</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#company">About us</a>
-                  </li>
+                
                   <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                   
@@ -101,6 +107,101 @@ http://www.tooplate.com/view/2111-pro-line
       </video>
     </section>
 
+    <!---ABOUT US-->
+    <section class="container tm-company-section" id="company">
+      <div class="row">
+        <div class="col-xl-9 col-lg-8 col-md-12 tm-company-left">
+          <div class="tm-company-about">
+            <div class="tm-company-img-container">
+              <img src="img/img-05.jpg" alt="Image" />
+            </div>
+            <div class="tm-company-about-text">
+              <header>
+                <h2 class="tm-company-about-header">Our Company</h2>
+              </header>
+              <p>
+               Taxilnk is a transportation service that links minibus drivers to multiple customers at a time.
+              </p>
+              <p class="mb-4">
+                The app uses google maps to detect the pick up location and destination of customers. Then the app estimates arrival time of the taxi and the fare the customer can expect. The customer can also pay with card, thus ensuring safety of the customer.
+              </p>
+              <a href="https://www.keepandshare.com/doc30/112194/taxilnk-where-drivers-meet-customers-pdf-1-6-meg?da=y" class="btn tm-btn tm-float-right">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xl-9 col-lg-4 col-md-12 tm-company-right  ml-lg-auto mr-lg-0"
+        >
+          <div class="tm-company-right-inner">
+            <ul class="nav nav-tabs" id="tmCompanyTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link tm-nav-link-border-right active"
+                  id="vision-tab"
+                  data-toggle="tab"
+                  href="#vision"
+                  role="tab"
+                  aria-controls="vision"
+                  aria-selected="true"
+                  >Vision</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link tm-no-border-right"
+                  id="mission-tab"
+                  data-toggle="tab"
+                  href="#mission"
+                  role="tab"
+                  aria-controls="mission"
+                  aria-selected="false"
+                  >Mission</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="tmTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="vision"
+                role="tabpanel"
+                aria-labelledby="vision-tab"
+              >
+              
+                <p>
+                  The taxi industry is massive in South Africa, starting to thrive in 1987 and contribute billions to the informal economy. Roughly R 90 billion per year.
+                </p>
+
+                <p>
+                 According to the National Taxi Alliance spokesperson Theo Malele, the industry now employs about 600 000 people. 
+                </p>
+                <p>
+                  This is a lot of unrecognized potential ...
+                 </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="mission"
+                role="tabpanel"
+                aria-labelledby="mission-tab"
+              >
+              <h3 class="tm-text-red">Patriotism</h3>
+                <p>
+                  Taxilnk will make the lives of millions of South Africans easier.
+                </p>
+                <h3 class="tm-text-red">Market Share</h3>
+                <p>
+                  Taxilnk aims to tap into 10% of the R 90 billion per year taxi industry.
+                </p>
+                <p>
+                  <h3 class="tm-text-red">Evolve</h3>
+                  Taxilnk will forever be evolving in the pioneering of new technology.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Features -->
     <div class="container tm-features-section" id="features">
       <div class="row tm-features-row">
@@ -225,104 +326,34 @@ http://www.tooplate.com/view/2111-pro-line
       </div>
     </div>
 
-    <!---ABOUT US-->
-    <section class="container tm-company-section" id="company">
-      <div class="row">
-        <div class="col-xl-9 col-lg-8 col-md-12 tm-company-left">
-          <div class="tm-company-about">
-            <div class="tm-company-img-container">
-              <img src="img/img-05.jpg" alt="Image" />
-            </div>
-            <div class="tm-company-about-text">
-              <header>
-                <h2 class="tm-company-about-header">Our Company</h2>
-              </header>
-              <p>
-               Taxilnk is a transportation service that links minibus drivers to multiple customers at a time.
-              </p>
-              <p class="mb-4">
-                The app uses google maps to detect the pick up location and destination of customers. Then the app estimates arrival time of the taxi and the fare the customer can expect. The customer can also pay with card, thus ensuring safety of the customer.
-              </p>
-              <a href="https://www.keepandshare.com/doc30/112194/taxilnk-where-drivers-meet-customers-pdf-1-6-meg?da=y" class="btn tm-btn tm-float-right">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-xl-9 col-lg-4 col-md-12 tm-company-right  ml-lg-auto mr-lg-0"
-        >
-          <div class="tm-company-right-inner">
-            <ul class="nav nav-tabs" id="tmCompanyTab" role="tablist">
-              <li class="nav-item">
-                <a
-                  class="nav-link tm-nav-link-border-right active"
-                  id="vision-tab"
-                  data-toggle="tab"
-                  href="#vision"
-                  role="tab"
-                  aria-controls="vision"
-                  aria-selected="true"
-                  >Vision</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link tm-no-border-right"
-                  id="mission-tab"
-                  data-toggle="tab"
-                  href="#mission"
-                  role="tab"
-                  aria-controls="mission"
-                  aria-selected="false"
-                  >Mission</a
-                >
-              </li>
-            </ul>
-            <div class="tab-content" id="tmTabContent">
-              <div
-                class="tab-pane fade show active"
-                id="vision"
-                role="tabpanel"
-                aria-labelledby="vision-tab"
-              >
-              
-                <p>
-                  The taxi industry is massive in South Africa, starting to thrive in 1987 and contribute billions to the informal economy. Roughly R 90 billion per year.
-                </p>
+    <!-- Sign in/up -->
 
-                <p>
-                 According to the National Taxi Alliance spokesperson Theo Malele, the industry now employs about 600 000 people. 
-                </p>
-                <p>
-                  This is a lot of unrecognized potential ...
-                 </p>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="mission"
-                role="tabpanel"
-                aria-labelledby="mission-tab"
-              >
-              <h3 class="tm-text-red">Patriotism</h3>
-                <p>
-                  Taxilnk will make the lives of millions of South Africans easier.
-                </p>
-                <h3 class="tm-text-red">Market Share</h3>
-                <p>
-                  Taxilnk aims to tap into 10% of the R 90 billion per year taxi industry.
-                </p>
-                <p>
-                  <h3 class="tm-text-red">Evolve</h3>
-                  Taxilnk will forever be evolving in the pioneering of new technology.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="container tm-signup-section" id="signup">
+
+    </section >
+    <div style = text-align:center;> 
+    <div class="formContainer">
+    <h1 style = text-align:center ;>Are you a driver ?</h1>
+    <p style = text-align:center; >If you are a driver and would like to join the team of taxi drivers to make South Africa's transportation industry a safer and more efficient for all, don't hesitate and sign up below. </p>
+    <p style = text-align:center;>Otherwise if you are already with us, you can sign in.</p>
+    <p>We will be in contact with you soon after you've signed up!</p>
+    <h2 style = text-align:center ;>Enter Credentials Here:</h2>
+     
+    <input type="email" placeholder="Email here" id="email"><br>
+    <input type="password" placeholder="Password here" id="password"><br>
+    
+    <button onclick="signUp()" id="signUp">SignUp</button>
+    <button onclick="signIn()" id="signIp">SignIn</button>
+    <button onclick="signOut()" id="signOut">SignOut</button>
+  </div>
+</div>
+</section>
 
     <!-- Contact -->
     <section class="container tm-contact-section" id="contact">
+
+      
+
       <div class="row">
         <div class="col-xl-5 col-lg-6 col-md-12 tm-contact-left">
           <div class="tm-contact-form-container ml-auto mr-0">
@@ -382,13 +413,14 @@ http://www.tooplate.com/view/2111-pro-line
         </div>
       </div>
     </section>
+
+   
+  
     <footer class="container tm-footer">
       <div class="row tm-footer-row">
         <p class="col-md-10 col-sm-12 mb-0">
            &copy; 2021 Taxilnk. All Rights Reserved.
-          <!----
-          <a rel="nofollow" href="https://www.facebook.com/tooplate" class="tm-footer-link">Tooplate</a>
-          --->
+        
         </p>
         <div class="col-md-2 col-sm-12 scrolltop">
           <div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
@@ -400,6 +432,7 @@ http://www.tooplate.com/view/2111-pro-line
     <!-- Single Page Nav plugin works with this version of jQuery -->
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
     <script>
       /**
        * detect IE
@@ -548,6 +581,62 @@ http://www.tooplate.com/view/2111-pro-line
           return false;
         });
       });
+
+
+      // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCktTBpjwvTwgROCDGRDCDyfRLRn4gX5ts",
+    authDomain: "login-50137.firebaseapp.com",
+    projectId: "login-50137",
+    storageBucket: "login-50137.appspot.com",
+    messagingSenderId: "319304930464",
+    appId: "1:319304930464:web:ca4036bb28522bffa165c5",
+    measurementId: "G-SWQ4S99GSK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  const auth =  firebase.auth();
+
+  //signup function
+  function signUp(){
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+
+    const promise = auth.createUserWithEmailAndPassword(email.value,password.value);
+    //
+    promise.catch(e=>alert(e.message));
+    alert("SignUp Successfully");
+  }
+
+  //signIN function
+  function  signIn(){
+    var email = document.getElementById("email");
+    var password  = document.getElementById("password");
+    const promise = auth.signInWithEmailAndPassword(email.value,password.value);
+    promise.catch(e=>alert(e.message));
+    
+  }
+
+
+  //signOut
+
+  function signOut(){
+    auth.signOut();
+    alert("SignOut Successfully from System");
+  }
+
+  //active user to homepage
+  firebase.auth().onAuthStateChanged((user)=>{
+    if(user){
+      var email = user.email;
+      alert("Active user "+email);
+
+    }else{
+      alert("No Active user Found")
+    }
+  })
     </script>
   </body>
 </html>

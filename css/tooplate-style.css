@@ -1,10 +1,3 @@
-/*
-
-Tooplate 2111 Pro Line
-
-http://www.tooplate.com/view/2111-pro-line
-
-*/
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -340,6 +333,11 @@ p:last-child {
 
 .nav-tabs {
   border-bottom: none;
+}
+
+.tm-signup-section {
+ 
+  text-align: right;
 }
 
 .tm-contact-section {
