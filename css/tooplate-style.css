@@ -2,9 +2,68 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
-  color: #626262;
+  color: #10522a;
   overflow-x: hidden;
 }
+
+button {
+	cursor: pointer;
+	position: relative;
+	padding: 1 rem 7.5rem;
+	border-radius: 2 rem;
+	line-height: 1.5 rem;
+	font-size: 1 rem;
+	font-weight: 600;
+	
+	border: 1px solid #012880;
+	background-image: linear-gradient(-180deg, #fff56d 0%, #36d4a0 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+							0 -0.25rem 1.5rem rgb(81, 158, 45) inset,
+							0 0.75rem 0.5rem rgba(244, 255, 92, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(180, 212, 119) inset;
+}
+
+button span {
+	color: transparent;
+	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+button::before {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+button::after {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	bottom: 0.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	filter: blur(1px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
 
 textarea {
   font-family: "Open Sans", sans-serif;
@@ -15,11 +74,12 @@ a:hover {
 }
 
 .tm-footer-link {
-  color: #626262;
+  color: #13532d;
 }
 
 button {
   border: none;
+  color:rgb(37, 90, 44)
 }
 
 a,
@@ -45,7 +105,7 @@ p:last-child {
 }
 
 .tm-page-header {
-  color: #444444;
+  color: #126b0f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,9 +123,9 @@ p:last-child {
   top: 158px;
   left: 0;
   width: 100%;
-  border-top: 1px solid #909090;
+  border-top: 1px solid #939e72;
   border-bottom: 1px solid #909090;
-  background-color: white;
+  background-color: rgb(75, 122, 81);
   z-index: 3000;
 }
 
@@ -73,7 +133,7 @@ p:last-child {
   position: fixed;
   top: 0;
   border-top: none;
-  background: white;
+  background: rgb(75, 122, 81);
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
@@ -86,12 +146,12 @@ p:last-child {
 
 #tmMainNav .nav-link.current,
 #tmMainNav .nav-link:hover {
-  color: #0662b9;
-  background: #eaeaea;
+  color: #215225;
+  background: #f1f38f;
 }
 
 .navbar-light .navbar-toggler {
-  background-color: white;
+  background-color: rgb(171, 250, 164);
 }
 
 .navbar {
@@ -132,12 +192,13 @@ p:last-child {
 .tm-banner-text-container {
   position: relative;
   z-index: 1000;
-  color: white;
+  color: rgb(216, 235, 46);
   text-align: center;
   max-width: 520px;
 }
 
 .tm-banner-title {
+  color:rgb(218, 201, 108);
   font-size: 3rem;
   font-weight: 300;
   margin-bottom: 40px;
@@ -173,7 +234,7 @@ p:last-child {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #5f5f5f;
+  color: #287718;
   margin-bottom: 55px;
 }
 
@@ -184,6 +245,7 @@ p:last-child {
 .tm-feature-icon {
   margin-right: 30px;
 }
+
 
 #activities {
   padding-top: 50px;
@@ -210,14 +272,14 @@ p:last-child {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 100%;
-  color: white;
+  color: rgb(255, 241, 164);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .tm-text-blue {
-  color: #108ac1;
+  color: #256814;
 }
 
 .tm-activity-block {
@@ -273,7 +335,7 @@ p:last-child {
   border: 1px solid #c6c6c6;
   border-radius: 0;
   background-color: transparent;
-  color: #6c6c6c;
+  color: #239636;
   padding: 10px 30px;
 }
 
@@ -292,7 +354,7 @@ p:last-child {
 }
 
 .tm-company-right-inner {
-  border: 1px solid #c7c7c7;
+  border: 1px solid #f5e9a7;
 }
 
 .nav-tabs .nav-link {
@@ -519,6 +581,7 @@ figure {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+  
 }
 
 @media (max-width: 540px) {
@@ -538,6 +601,7 @@ figure {
   }
 
   .tm-contact-section {
+    color: #0c3a1e;
     padding-top: 70px;
     padding-bottom: 60px;
   }
